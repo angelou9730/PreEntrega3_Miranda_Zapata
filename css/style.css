@@ -1,0 +1,13 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cuadro {
+    margin-bottom: 20px;
+}
+.search-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
