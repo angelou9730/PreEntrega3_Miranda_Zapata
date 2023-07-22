@@ -1,0 +1,17 @@
+{
+  "name": "proyecto-empresa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-sass": "nodemon -e scss -x  \"npm run build-sass\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.64.1"
+  }
+}

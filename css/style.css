@@ -1,13 +1,82 @@
-*{
-    margin:0 ;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.cuadro {
-    margin-bottom: 20px;
-}
-.search-button {
-    margin-top: 10px;
-    margin-bottom: 10px;
 
+/*agregando gradientes*/
+body {
+  background: linear-gradient(to bottom, #dddddd, #999999);
 }
+
+.header-gradient {
+  background: linear-gradient(to bottom, #dddddd, #999999);
+  color: black; /* Cambiar el color del texto según sea necesario */
+}
+
+.nav-gradient {
+  background: linear-gradient(to bottom, #999999, #666666);
+  color: white; /* Ajustar el color del texto según sea necesario */
+}
+
+/*agregando logo*/
+#logo {
+  max-width: 100px; /* Ajusta el ancho máximo del logo */
+  max-height: 70px; /* Ajusta la altura máxima del logo */
+}
+
+.cuadro {
+  margin-bottom: 20px;
+}
+
+.search-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.theme-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Mueve el botón al lado derecho */
+}
+
+.theme-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/*index imagenes*/
+.imagen-peltroche {
+  width: 100%;
+}
+
+.iframe-container {
+  width: 100%;
+}
+
+.search-box .search-button {
+  margin-left: -1px;
+}
+
+/* CSS personalizado */
+.main-spacing {
+  margin-top: 50px; /* Puedes ajustar el valor según el espacio que desees */
+}
+
+.main-spacing {
+  margin-top: 50px; /* Ajusta el valor según el espacio deseado entre el header y el main */
+}
+
+.footer-spacing {
+  margin-top: 495px; /* Ajusta el valor según el espacio deseado entre el main y el footer */
+}
+
+.footer-spacing2 {
+  margin-top: 180px; /* Ajusta el valor según el espacio deseado entre el main y el footer */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Home</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="" alt="logo"></a>
+    <header  class="header-gradient">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-gradient">
+            <a class="navbar-brand" href="#"><img src="./assets/img/logo.jpg" alt="logo" id="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,21 +25,36 @@
                     <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contacto</a></li>
                 </ul>
             </div>
+            <button id="toggle-theme" class="theme-button">
+                <img src="./assets/img/sun.png" alt="Sol">
+                <img src="./assets/img/moon.png" alt="Luna">
+            </button>
         </nav>
     </header>
-    <main>
+    <main class="mt-5">
         <div class="container">
+            <!-- Primera fila -->
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="empresa">
-                        <div class="empresa_content"><img src="" alt="imagen de la empresa"></div> 
+                        <div class="empresa_content">
+                            <!-- Div para la imagen -->
+                            <div class="imagen-container">
+                                <img src="./assets/img/peltroche.jpg" alt="imagen de la empresa" class="imagen-peltroche">
+                            </div>
+                        </div>
                     </div>
                     <h2>Ubicación</h2>
                     <p>Dirección de la empresa</p>
-                    <div class="col-md-6">
-                        <div class="mapa">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1234567890!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDExJzEzLjUiTiA3NMKwMzknMzkuOCJX!5e0!3m2!1sen!2sus!4v1625859301270!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
+                </div>
+            </div>
+        
+                <!-- Segunda fila -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Div para el iframe del mapa -->
+                    <div class="iframe-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1234567890!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDExJzEzLjUiTiA3NMKwMzknMzkuOCJX!5e0!3m2!1sen!2sus!4v1625859301270!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
@@ -49,11 +65,16 @@
             <p>Quisque blandit pharetra velit, in tincidunt mi efficitur eu. Nam dictum, velit non malesuada ultricies, neque tellus convallis nulla, vel eleifend velit urna nec libero. Curabitur non pulvinar arcu. Nulla in sem volutpat, ullamcorper est in, volutpat mauris. Suspendisse id diam eu neque semper euismod vitae non metus. Proin dignissim libero nunc, nec faucibus felis pellentesque sed. Nullam vel ultricies sapien, eu volutpat mi. Praesent pharetra metus nec enim suscipit, nec pharetra nulla rutrum. In sit amet blandit nulla, ut fermentum sem. Suspendisse id purus at metus pharetra fermentum a ut dolor. Integer porttitor, justo eu fermentum faucibus, orci enim aliquet neque, eget hendrerit justo ante eu nulla. Donec non libero malesuada, posuere enim non, consectetur ex.</p>
         </section>
     </main>
-    <footer class="bg-primary text-white">
+    <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p>footer</p>
+                    <p>Síguenos en redes sociales:</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/tucuenta" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.twitter.com/tucuenta" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/tucuenta" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
